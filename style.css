@@ -1,0 +1,62 @@
+.raptor {
+  margin-left: 600px;
+}
+
+.photob {
+  margin-left: 600px;
+  margin-top: -70px;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  position: absolute;
+}
+
+.titre {
+  margin-left: 600px;
+  background-color: white;
+}
+
+.red {
+  color: red;
+  margin-left: 600px;
+  background-color: white;
+}
+
+.rond {
+  margin-left: 800px;
+  margin-top: -280px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 8px;
+}
+
+.blanc {
+  background-color: white;
+  color: gray;
+  margin-left: 600px;
+  opacity: 1;
+}
+
+.coms {
+  background-color: white;
+  color: gray;
+  margin-left: 600px;
+}
+
+.raptor:hover {
+  opacity: 0.5;
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+/*# sourceMappingURL=style.css.map */
