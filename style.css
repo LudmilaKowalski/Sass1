@@ -89,6 +89,15 @@
           animation-fill-mode: forwards;
 }
 
+.tout:hover .blanck {
+  -webkit-animation-name: enhaut;
+          animation-name: enhaut;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 @-webkit-keyframes enhaut {
   from {
     -webkit-transform: translateY(50px);
@@ -135,5 +144,12 @@
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
   }
+}
+
+.blanck {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  margin-left: 600px;
 }
 /*# sourceMappingURL=style.css.map */
