@@ -1,10 +1,13 @@
+$ppop-y: 50px;
+
 .raptor {
     margin-left: 600px;
+    scale:100%;
 }
 
 .photob {
     margin-left: 600px;
-    margin-top: -70px;
+    margin-top: -50px;
    // border:1px solid red;
  //padding:1px;
 
@@ -57,7 +60,8 @@ font-size: 8px;
     background-color: white;
     color: gray;
     margin-left: 600px;
-    opacity: 1;
+    opacity: 0;
+    
     
 }
 
@@ -73,14 +77,84 @@ font-size: 8px;
   // }
 
 
+.tout {
+    &:hover .raptor {
+        opacity: 0.5 ;
+        filter: brightness(150%);
+        scale: 150%;
+        
 
 
-.raptor:hover {
-    opacity: 0.5 ;
-    filter: brightness(150%);
+    
+    }
 
+
+    &:hover .lestitres {
+        animation-name: enhaut ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        
+    }
+
+    &:hover .blanc {
+        animation-name: apparition;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    }
+    
+    &:hover .photob {
+        animation-name: enhaut ;
+        animation-duration: 1s;
+        animation-fill-mode: forwards; 
+    }
 }
 
+
+
+
+//&:hover .lestitres {
+   // animation-name: enhaut ;
+  //  animation-duration: 1s;
+   // animation-fill-mode: forwards;
+//}
+
+//&:hover .blanc{
+   // animation-name: apparition;
+   // animation-duration: 1s;
+  //  animation-fill-mode: forwards;
+   // background-color: blue;
+//}
+
+
+
+
+@keyframes enhaut {
+    
+        from {
+            
+            transform: translateY($ppop-y);
+        }
+        to {
+            
+            transform: translateY(-$ppop-y);
+        }
+    
+}
+
+
+
+@keyframes apparition {
+    
+        from {
+            opacity: 0;
+            transform: translateY(#{$ppop-y});
+        }
+        to {
+            opacity: 1;
+            transform: translateY(-#{$ppop-y});
+        }
+    
+}
 
 
 //.photob:hover {

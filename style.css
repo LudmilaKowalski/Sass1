@@ -1,10 +1,11 @@
 .raptor {
   margin-left: 600px;
+  scale: 100%;
 }
 
 .photob {
   margin-left: 600px;
-  margin-top: -70px;
+  margin-top: -50px;
   width: 150px;
   line-height: 50px;
   text-align: center;
@@ -45,7 +46,7 @@
   background-color: white;
   color: gray;
   margin-left: 600px;
-  opacity: 1;
+  opacity: 0;
 }
 
 .coms {
@@ -54,9 +55,85 @@
   margin-left: 600px;
 }
 
-.raptor:hover {
+.tout:hover .raptor {
   opacity: 0.5;
   -webkit-filter: brightness(150%);
           filter: brightness(150%);
+  scale: 150%;
+}
+
+.tout:hover .lestitres {
+  -webkit-animation-name: enhaut;
+          animation-name: enhaut;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.tout:hover .blanc {
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.tout:hover .photob {
+  -webkit-animation-name: enhaut;
+          animation-name: enhaut;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes enhaut {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+}
+
+@keyframes enhaut {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+}
+
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
